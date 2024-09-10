@@ -36,7 +36,7 @@ function updateDecorations() {
 
     const filePath = editor.document.fileName;
     const filePathFromPrjDir = filePath.substring(prjDir.length + 1);
-    const fileCoverage = coverageData[filePathFromPrjDir];
+    const fileCoverage = coverageData[filePathFromPrjDir] || coverageData[filePath];
     if (!fileCoverage) {return;}
 
     let decorations: {
