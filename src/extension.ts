@@ -17,7 +17,7 @@ function getCoverageData(): Record<string, number[]> | null {
 
 const decorationTypes: vscode.TextEditorDecorationType[] = [1, 2, 3, 4, 5, 6, 7, 8].map(i => (
     vscode.window.createTextEditorDecorationType({
-        backgroundColor: `rgba(255, 0, 0, ${i * 0.125})`,
+        backgroundColor: `rgba(255, 0, 0, ${i * 0.1})`,
         isWholeLine: true
     })
 ));
