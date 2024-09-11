@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - feature: Add reset coverage result command
+- feature: Support clear flag from coverage result
 
 ## 0.0.2
 

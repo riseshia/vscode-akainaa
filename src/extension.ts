@@ -35,7 +35,10 @@ function loadCoverageFile(): CoverageResult | null {
     const coverageFilePath = path.join(workspaceFolders[0].uri.fsPath, coverageFilePathFromPrj);
     if (!fs.existsSync(coverageFilePath)) {return null;}
 
-    const coverageResult: CoverageResult = JSON.parse(fs.readFileSync(coverageFilePath, 'utf8'));
+    const json = JSON.parse(fs.readFileSync(coverageFilePath, 'utf8'));
+    if (json.clear) { resetSnapshots(); }
+
+    const coverageResult: CoverageResult = json;
 
     const newCoverageResult: CoverageResult = {};
     for (const filePath in coverageResult) {
