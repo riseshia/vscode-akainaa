@@ -56,6 +56,10 @@ function updateSnapshots() {
     }
 }
 
+function resetSnapshots() {
+    coverageSnapshots.splice(0, coverageSnapshots.length);
+}
+
 function getCoverageData(): CoverageResult | null {
     if (coverageSnapshots.length === 0) {return null;}
 
@@ -156,13 +160,9 @@ export function activate(context: vscode.ExtensionContext) {
 	// This line of code will only be executed once when your extension is activated
 	console.log('akainaa is now active!');
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	const disposable = vscode.commands.registerCommand('akainaa.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from akainaa!');
+	const disposable = vscode.commands.registerCommand('akainaa.resetCoverage', () => {
+        resetSnapshots();
+        updateDecorations();
 	});
 
 	context.subscriptions.push(disposable);

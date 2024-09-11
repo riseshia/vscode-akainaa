@@ -21,8 +21,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "akainaa.helloWorld",
-        "title": "Hello World"
+        "command": "akainaa.resetCoverage",
+        "title": "Reset coverage result"
       }
     ]
   },

@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- feature: Add reset coverage result command
+
 ## 0.0.2
 
 - feature: Support accumulated coverage decoration
