@@ -3,6 +3,7 @@
   "displayName": "akainaa",
   "description": "",
   "version": "0.0.1",
+  "publisher": "riseshia",
   "engines": {
     "vscode": "^1.92.0"
   },
