@@ -27,6 +27,10 @@ Akainaa.start(
 )
 ```
 
+## Commands
+
+- `Reset coverage result`: Clear coverage result, so all red lines will be removed.
+
 ## Extension Settings
 
 to be supported
