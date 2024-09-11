@@ -6,7 +6,7 @@ vscode-akainaa is a Visual Studio Code extension that emphasis executed line by 
 
 Highlight executed line.
 
-\!\[feature\]\(images/window.png\)
+![feature](./images/window.png)
 
 ## Requirements
 
