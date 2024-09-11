@@ -22,7 +22,8 @@ Akainaa.start(
   online_emit: {
     mode: :file,
     interval: 1, # seconds
-    output_path: 'tmp/akainaa.json',
+    output_path: 'tmp/coverage.json',
+    trap_at_exit: true,
   },
 )
 ```
